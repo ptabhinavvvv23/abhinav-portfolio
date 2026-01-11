@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Abhinav</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #051F20;
+            color: white;
+            font-family: 'Quintessential';
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #055355;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li {
+            list-style: none;
+            cursor: pointer;
+            font-size: 1.3rem;
+            transition: 0.3s;
+        }
+
+        nav ul li:hover {
+            color: #2EC4B6;
+        }
+
+        .left {
+            font-size: 2.2rem;
+        }
+
+        /* ABOUT SECTION */
+        #about {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #about h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        #about > p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: #D0D0D0;
+        }
+
+        /* ABOUT BOXES */
+        .about-box {
+            margin: 35px auto;
+            max-width: 750px;
+            background-color: #073A3B;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        .about-box h2 {
+            margin-bottom: 12px;
+            color: #2EC4B6;
+            font-size: 1.8rem;
+        }
+
+        .about-box p {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            color: #E0E0E0;
+        }
+
+        /* BACK LINK */
+        a.back {
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: #2EC4B6;
+            text-decoration: none;
+        }
+
+        a.back:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                gap: 12px;
+            }
+
+            #about h1 {
+                font-size: 2.4rem;
+            }
+
+            #about > p {
+                font-size: 1.3rem;
+            }
+
+            .about-box p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="left">Abhinav's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li onclick="location.href='index.html#home'">Home</li>
+                <li onclick="location.href='about.html'">About</li>
+                <li onclick="location.href='index.html#projects'">Projects</li>
+                <li onclick="location.href='index.html#contact'">Contact</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h1>About Me</h1>
+
+        <p>
+            Hello! I’m <strong>Abhinav</strong>, a Bachelor of Computer Applications (BCA) student with a strong passion
+            for web development and software design. I enjoy transforming ideas into functional and visually
+            appealing digital solutions and continuously learning new technologies to grow as a
+            full-stack developer.
+        </p>
+
+        <div class="about-box">
+            <h2>Personal Details</h2>
+            <p><strong>Name:</strong> Abhinav</p>
+            <p><strong>Degree:</strong> Bachelor of Computer Applications (BCA)</p>
+            <p><strong>Field:</strong> Web Development & Programming</p>
+            <p><strong>Career Goal:</strong> Full-Stack Developer</p>
+        </div>
+
+        <div class="about-box">
+            <h2>Technical Skills</h2>
+            <p><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Backend:</strong> PHP / Python (Learning)</p>
+            <p><strong>Programming:</strong> C, Java (Beginner)</p>
+            <p><strong>Tools:</strong> VS Code, Git, GitHub</p>
+        </div>
+
+        <div class="about-box">
+            <h2>Interests & Strengths</h2>
+            <p>
+                Problem-solving, clean UI design, learning emerging technologies,
+                and building real-world projects with consistency and dedication.
+            </p>
+        </div>
+
+        <div class="about-box">
+            <h2>Career Objective</h2>
+            <p>
+                To build scalable, efficient, and user-focused web applications while
+                continuously upgrading my technical skills and contributing to impactful projects.
+            </p>
+        </div>
+
+        <a href="index.html" class="back">← Back to Portfolio</a>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #051F20;
+            color: white;
+            font-family: 'Quintessential';
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #055355;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li {
+            list-style: none;
+            cursor: pointer;
+            font-size: 1.3rem;
+            transition: 0.3s;
+        }
+
+        nav ul li:hover {
+            color: #2EC4B6;
+        }
+
+        .left {
+            font-size: 2.2rem;
+        }
+
+        /* HOME SECTION */
+        #home {
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+
+        }
+
+        #home h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        /* PROFILE IMAGE */
+        .profile-img {
+            width: 180px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid white;
+            object-fit: cover;
+            margin: 25px auto;
+            display: block;
+        }
+
+        /* INTRO CARD */
+        .intro-card {
+            margin: 20px auto 40px;
+            max-width: 750px;
+            background-color: #073A3B;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .intro-card p {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: #E0E0E0;
+        }
+
+        /* CONTENT BOXES */
+        .home-box {
+            margin: 35px auto;
+            max-width: 750px;
+            background-color: #073A3B;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        .home-box h2 {
+            margin-bottom: 12px;
+            color: #2EC4B6;
+            font-size: 1.8rem;
+        }
+
+        .home-box p {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            color: #E0E0E0;
+        }
+
+        /* PROJECT PREVIEW */
+        .project-box {
+            background-color: #0F4244;
+            text-align: center;
+        }
+
+        .view-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background-color: #2EC4B6;
+            color: black;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #033b3d;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.1rem;
+        }
+
+       /* RESPONSIVE */
+        @media (max-width: 900px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                gap: 12px;
+            }
+
+            #about h1 {
+                font-size: 2.4rem;
+            }
+
+            #about > p {
+                font-size: 1.3rem;
+            }
+
+            .about-box p {
+                font-size: 1.2rem;
+            }
+        }
+        nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #2EC4B6;
+}
+
+       
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="left">Abhinav's Portfolio</div>
+       <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+    </nav>
+
+    <!-- HOME -->
+    <section id="home">
+        <h1>Welcome</h1>
+
+        <!-- IMAGE -->
+        <img src="pic.jpg" alt="Abhinav Profile Photo" class="profile-img">
+
+        <!-- INTRO -->
+        <div class="intro-card">
+            <p>
+                Hi, I’m <strong>Abhinav</strong>, a Bachelor of Computer Applications (BCA) undergraduate
+                with a strong passion for web development, programming, and modern technologies.
+                I aim to grow as a full-stack developer by building meaningful and real-world projects.
+            </p>
+        </div>
+
+        <div class="home-box">
+            <h2>What I Do</h2>
+            <p>
+                I build responsive websites, explore backend technologies,
+                and continuously improve my programming and software design skills.
+            </p>
+        </div>
+
+        <div class="home-box">
+            <h2>My Focus</h2>
+            <p>
+                Learning full-stack development, strengthening core fundamentals,
+                and applying knowledge through hands-on projects.
+            </p>
+        </div>
+
+        <div class="home-box project-box">
+            <h2>Project Highlights</h2>
+            <p>• Portfolio Website</p>
+            <p>• Online Calculator</p>
+            <p>• Student Management System</p>
+
+            <a href="projects.html" class="view-btn">View All Projects</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Abhinav | All Rights Reserved
+    </footer>
+
+</body>
+</html>
