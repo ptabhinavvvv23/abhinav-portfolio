@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #051F20;
+            color: white;
+            font-family: 'Quintessential';
+        }
+
+        /* NAVBAR (SAME AS INDEX) */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #055355;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li {
+            list-style: none;
+            cursor: pointer;
+            font-size: 1.3rem;
+            transition: 0.3s;
+        }
+
+        nav ul li:hover {
+            color: #2EC4B6;
+        }
+
+        .left {
+            font-size: 2.2rem;
+        }
+
+        /* PROJECT SECTION */
+        #projects {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #projects h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+
+        /* PROJECT CARDS (SAME STYLE AS INDEX) */
+        .project-box {
+            margin: 35px auto;
+            max-width: 750px;
+            background-color: #073A3B;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        .project-box h2 {
+            margin-bottom: 10px;
+            color: #2EC4B6;
+            font-size: 1.8rem;
+        }
+
+        .project-box p {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            color: #E0E0E0;
+        }
+
+        /* FOOTER (SAME AS INDEX) */
+        footer {
+            background-color: #033b3d;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.1rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            #projects h1 {
+                font-size: 2.4rem;
+            }
+
+            .project-box p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="left">Abhinav's Portfolio</div>
+        <ul>
+            <li onclick="location.href='index.html'">Home</li>
+            <li onclick="location.href='about.html'">About</li>
+            <li onclick="location.href='projects.html'">Projects</li>
+            <li onclick="location.href='contact.html'">Contact</li>
+        </ul>
+    </nav>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h1>My Projects</h1>
+
+        <div class="project-box">
+            <h2>Portfolio Website</h2>
+            <p>
+                A fully responsive personal portfolio website built using HTML and CSS,
+                showcasing my skills, projects, and academic profile.
+            </p>
+        </div>
+
+        <div class="project-box">
+            <h2>Online Calculator</h2>
+            <p>
+                A simple and interactive calculator developed using HTML, CSS,
+                and JavaScript to perform basic arithmetic operations.
+            </p>
+        </div>
+
+        <div class="project-box">
+            <h2>Student Management System</h2>
+            <p>
+                A CRUD-based Python application designed to manage student records,
+                allowing data insertion, updating, deletion, and retrieval.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Abhinav | All Rights Reserved
+    </footer>
+
+</body>
+</html>
